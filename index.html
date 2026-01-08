@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>English Janala</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+
+  <!-- DaisyUI + Tailwind -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-white">
+
+  <!-- ================= NAVBAR ================= -->
+  <header>
+    <div class="navbar bg-base-100 shadow px-4">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box mt-3 w-52 p-2 shadow">
+            <li><a class="btn btn-outline btn-primary">FAQ</a></li>
+            <li><a class="btn btn-outline btn-primary">Learn</a></li>
+            <li><a class="btn btn-outline btn-primary">Logout</a></li>
+          </ul>
+        </div>
+
+        <a class="flex items-center gap-2">
+          <span class="text-xl font-bold">English</span>
+          <img src="./assets/logo.png" class="w-8" />
+          <span class="font-semibold">জানালা</span>
+        </a>
+      </div>
+
+      <div class="navbar-end hidden lg:flex gap-3">
+        <a class="btn btn-outline btn-primary">FAQ</a>
+        <a class="btn btn-outline btn-primary">Learn</a>
+        <a class="btn btn-outline btn-primary">Logout</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= HERO ================= -->
+  <section class="flex flex-col-reverse md:flex-row items-center max-w-[1240px] mx-auto mt-12 px-4 gap-10">
+    <div class="text-center md:text-left md:w-1/2">
+      <h1 class="text-4xl md:text-5xl font-bold mb-6">
+        <span class="text-[#00BCFF]">English</span> is Easy!!
+      </h1>
+      <p class="mb-8">
+        আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন।
+      </p>
+
+      <form class="space-y-4">
+        <input type="text" placeholder="Enter Your Name" class="input input-primary w-full" />
+        <input type="text" placeholder="Enter Password" class="input input-primary w-full" />
+        <button class="btn btn-primary w-full md:w-auto">Get Started</button>
+      </form>
+    </div>
+
+    <div class="md:w-1/2 flex justify-center">
+      <img src="./assets/eng.jpg" alt="English Learning" class="
+          w-full 
+          max-w-[350px]
+          rounded-2xl
+          shadow-lg
+          object-cover border border-gray-200"
+        ">
+    </div>
+
+  </section>
+
+  <!-- ================= LESSON ================= -->
+  <section class="mt-16 px-4">
+    <h1 class="text-4xl md:text-5xl font-bold text-center mb-10">
+      <span class="text-[#00BCFF]">Let's</span> Learn Vocabularies
+    </h1>
+
+    <div id="levl-container" class="flex flex-wrap justify-center gap-4"></div>
+  </section>
+
+  <!-- ================= WORDS ================= -->
+  <section id="word-container" class="bg-gray-100 p-4 md:p-10 my-10 w-11/12 mx-auto
+  grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+    <div class="text-center col-span-full space-y-4">
+      <p>আপনি এখনো কোন Lesson Select করেন ন</p>
+      <h1 class="font-bold text-2xl md:text-4xl">একটি Lesson Select করুন</h1>
+    </div>
+
+  </section>
+
+  <!-- ================= MODAL ================= -->
+  <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+    <div class="modal-box space-y-4">
+      <div id="detailsContainer"></div>
+      <div class="modal-action">
+        <form method="dialog">
+          <button class="btn">Close</button>
+        </form>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="./index.js"></script>
+</body>
+
+</html>
+
+
+
